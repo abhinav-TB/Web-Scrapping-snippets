@@ -7,7 +7,6 @@ const puppeteer = require('puppeteer');
 //   await page.type('input[name=search]', 'kochi', {delay: 20})
 await page.waitForSelector('#manage-trips', { visible: true, timeout: 0 });
   await page.click('[class="dIyEr"]')
-/
   
  
   await browser.close();
