@@ -4,8 +4,8 @@ const puppeteer = require('puppeteer');
   const browser = await puppeteer.launch({headless: false});
   const page = await browser.newPage();
   await page.goto('https://web.whatsapp.com/', {delay: 20});
-//   await page.type('input[name=search]', 'kochi', {delay: 20})
-await page.waitForSelector('#manage-trips', { visible: true, timeout: 0 });
+
+  await page.waitForSelector('#manage-trips', { visible: true, timeout: 0 });
   await page.click('[class="dIyEr"]')
   
  
